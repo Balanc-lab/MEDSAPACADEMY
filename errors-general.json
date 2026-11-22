@@ -1,0 +1,22 @@
+{
+"errors": [
+{"id": "M3897", "msg": "Plant data of material RM-1001 is locked by the user TRAINEE02", "module": "MM", "tx": ["MIGO", "MM02"],
+"c": {"ar": "مستخدم آخر يعالج السجل نفسه (تعديل المادة أو ترحيل على المادة والمصنع) في اللحظة نفسها.", "en": "Another user is processing the same record (changing the material or posting on the same material and plant) at that moment.", "fr": "Un autre utilisateur traite le même enregistrement (modification de l'article ou saisie sur le même article et la même division)."},
+"s": {"ar": "انتظر قليلًا ثم أعد المحاولة؛ إن استمر القفل اطلب من المسؤول التحقق من إدخالات القفل في SM12 دون حذفها عشوائيًا.", "en": "Wait and retry; if the lock persists, ask the administrator to check lock entries in SM12 rather than deleting them blindly.", "fr": "Patientez puis réessayez ; si le verrou persiste, demandez à l'administrateur de vérifier les entrées dans SM12 sans les supprimer à l'aveugle."}},
+{"msg": "You are not authorized to use transaction MIGO", "module": "BC", "tx": ["SU53"],
+"c": {"ar": "لا يحتوي أي دور مسند إلى المستخدم على صلاحية تشغيل المعاملة (S_TCODE).", "en": "None of the user's roles grants the right to start the transaction (S_TCODE).", "fr": "Aucun rôle de l'utilisateur n'autorise le lancement de la transaction (S_TCODE)."},
+"s": {"ar": "شغّل SU53 فورًا وأرسل لقطة النتيجة إلى فريق الصلاحيات لطلب الدور المناسب.", "en": "Run SU53 immediately and send the result to the security team to request the right role.", "fr": "Lancez SU53 immédiatement et transmettez le résultat à l'équipe sécurité pour obtenir le bon rôle."}},
+{"msg": "Update was terminated", "module": "BC", "tx": ["MB51", "SM37"],
+"c": {"ar": "حدث خطأ في مرحلة التحديث غير المتزامن بعد الحفظ، فلم يُكتب المستند في قاعدة البيانات.", "en": "An error occurred during the asynchronous update after saving, so the document was not written to the database.", "fr": "Une erreur s'est produite pendant la mise à jour asynchrone après sauvegarde ; le document n'a pas été écrit."},
+"s": {"ar": "لا تعِد الترحيل مباشرة؛ تحقق أولًا في MB51 من عدم وجود المستند، واطلب من المسؤول مراجعة SM13 وسجل النظام.", "en": "Do not repost straight away; first check in MB51 that the document does not exist, and ask the administrator to review SM13 and the system log.", "fr": "Ne ressaisissez pas tout de suite ; vérifiez d'abord dans MB51 que le document n'existe pas et faites contrôler SM13 et le journal système."}},
+{"msg": "Account determination for entry INT GBB ___ VBR 3000 not possible", "module": "MM", "tx": ["MM03", "MIGO"],
+"c": {"ar": "لا يوجد إدخال في تحديد الحسابات (OBYC) لمفتاح العملية وفئة التقييم المعنيين.", "en": "No account determination entry (OBYC) exists for the transaction key and valuation class concerned.", "fr": "Aucune entrée de détermination des comptes (OBYC) pour la clé d'opération et la classe de valorisation."},
+"s": {"ar": "تحقق من فئة التقييم في عرض Accounting 1 (MM03) واطلب من فريق المالية إكمال إعداد OBYC.", "en": "Check the valuation class in the Accounting 1 view (MM03) and ask finance to complete the OBYC setup.", "fr": "Vérifiez la classe de valorisation (vue Comptabilité 1, MM03) et faites compléter OBYC par la finance."}},
+{"msg": "Material RM-1001 not maintained in plant MA02", "module": "MM", "tx": ["MM03"],
+"c": {"ar": "السجل الرئيسي للمادة غير ممتد إلى المصنع المطلوب.", "en": "The material master is not extended to the requested plant.", "fr": "La fiche article n'est pas étendue à la division demandée."},
+"s": {"ar": "اطلب من مسؤول البيانات الرئيسية توسيع المادة إلى المصنع بالعروض المطلوبة (المشتريات، MRP، المحاسبة...).", "en": "Ask master data to extend the material to the plant with the required views (purchasing, MRP, accounting...).", "fr": "Demandez l'extension de l'article à la division avec les vues requises (achats, MRP, comptabilité...)."}},
+{"msg": "Material RM-1001 not maintained in storage location RM02", "module": "MM", "tx": ["MM03", "MIGO"],
+"c": {"ar": "موقع التخزين غير ممتد للمادة، والإنشاء التلقائي لموقع التخزين غير مفعّل لهذه الحركة.", "en": "The storage location is not extended for the material and automatic creation is not active for this movement.", "fr": "Le magasin n'est pas créé pour l'article et la création automatique n'est pas active pour ce mouvement."},
+"s": {"ar": "استخدم موقع تخزين صحيحًا أو اطلب توسيع المادة إلى الموقع الجديد.", "en": "Use a valid storage location or request the extension of the material to the new location.", "fr": "Utilisez un magasin valide ou demandez l'extension de l'article au nouveau magasin."}}
+]
+}

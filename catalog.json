@@ -1,0 +1,29 @@
+{
+ "version": "1.0.0",
+ "transactions": [
+  "data/transactions/mm-inventory.json",
+  "data/transactions/mm-purchasing.json",
+  "data/transactions/wm-stock.json",
+  "data/transactions/wm-inventory.json",
+  "data/transactions/le-shipping.json",
+  "data/transactions/admin.json",
+  "data/transactions/ewm.json",
+  "data/transactions/process.json"
+ ],
+ "learning": [
+  "data/learning/paths.json",
+  "data/learning/beginner.json",
+  "data/learning/intermediate.json",
+  "data/learning/advanced.json"
+ ],
+ "movementTypes": "data/movement-types.json",
+ "stockStatuses": "data/stock-statuses.json",
+ "lifecycle": "data/lifecycle.json",
+ "glossary": "data/glossary.json",
+ "tables": "data/tables.json",
+ "errors": "data/errors-general.json",
+ "modules": "data/modules.json",
+ "screens": "data/screens.json",
+ "annotations": "data/annotations/registry.json",
+ "secure": "data/secure/company.json"
+}

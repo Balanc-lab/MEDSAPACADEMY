@@ -1,0 +1,535 @@
+{
+ "modules": [
+  {
+   "id": "MM",
+   "color": "blue",
+   "icon": "boxes",
+   "name": {
+    "ar": "إدارة المواد",
+    "en": "Materials Management",
+    "fr": "Gestion des articles"
+   },
+   "desc": {
+    "ar": "المشتريات وإدارة المخزون وتقييمه وتخطيط المتطلبات.",
+    "en": "Purchasing, inventory management, valuation and requirements planning.",
+    "fr": "Achats, gestion et valorisation des stocks, planification des besoins."
+   }
+  },
+  {
+   "id": "WM",
+   "color": "teal",
+   "icon": "warehouse",
+   "name": {
+    "ar": "إدارة المستودعات (التقليدية)",
+    "en": "Warehouse Management (classic)",
+    "fr": "Gestion des entrepôts (classique)"
+   },
+   "desc": {
+    "ar": "LE-WM: أنواع التخزين والرفوف وأوامر النقل والجرد على مستوى الرف.",
+    "en": "LE-WM: storage types, bins, transfer orders and bin-level inventory.",
+    "fr": "LE-WM : types de magasin, emplacements, ordres de transfert et inventaire par emplacement."
+   }
+  },
+  {
+   "id": "LE",
+   "color": "indigo",
+   "icon": "truck",
+   "name": {
+    "ar": "تنفيذ الخدمات اللوجستية",
+    "en": "Logistics Execution",
+    "fr": "Exécution logistique"
+   },
+   "desc": {
+    "ar": "التسليمات الصادرة والانتقاء والإصدار والشحنات.",
+    "en": "Outbound deliveries, picking, goods issue and shipments.",
+    "fr": "Livraisons sortantes, prélèvement, sortie et transports."
+   }
+  },
+  {
+   "id": "EWM",
+   "color": "orange",
+   "icon": "forklift",
+   "name": {
+    "ar": "إدارة المستودعات الموسعة",
+    "en": "Extended Warehouse Management",
+    "fr": "Extended Warehouse Management"
+   },
+   "desc": {
+    "ar": "الحل الاستراتيجي للمستودعات في S/4HANA: مهام وأوامر المستودع، التعبئة، الجرد والمراقبة.",
+    "en": "The strategic warehouse solution in S/4HANA: warehouse tasks and orders, packing, inventory and monitoring.",
+    "fr": "La solution d'entrepôt stratégique de S/4HANA : tâches et ordres magasin, emballage, inventaire et suivi."
+   }
+  },
+  {
+   "id": "QM",
+   "color": "green",
+   "icon": "microscope",
+   "name": {
+    "ar": "إدارة الجودة",
+    "en": "Quality Management",
+    "fr": "Gestion de la qualité"
+   },
+   "desc": {
+    "ar": "دفعات الفحص والنتائج وقرارات الاستخدام.",
+    "en": "Inspection lots, results and usage decisions.",
+    "fr": "Lots de contrôle, résultats et décisions d'emploi."
+   }
+  },
+  {
+   "id": "PP",
+   "color": "rose",
+   "icon": "factory",
+   "name": {
+    "ar": "تخطيط الإنتاج",
+    "en": "Production Planning",
+    "fr": "Planification de la production"
+   },
+   "desc": {
+    "ar": "أوامر الإنتاج وتجهيز المواد والتأكيدات.",
+    "en": "Production orders, material staging and confirmations.",
+    "fr": "Ordres de fabrication, mise à disposition et confirmations."
+   }
+  },
+  {
+   "id": "SD",
+   "color": "violet",
+   "icon": "shopping-cart",
+   "name": {
+    "ar": "المبيعات والتوزيع",
+    "en": "Sales and Distribution",
+    "fr": "Ventes et distribution"
+   },
+   "desc": {
+    "ar": "أوامر البيع وبدء دورة التسليم.",
+    "en": "Sales orders that start the delivery cycle.",
+    "fr": "Commandes clients qui lancent le cycle de livraison."
+   }
+  },
+  {
+   "id": "BC",
+   "color": "slate",
+   "icon": "settings",
+   "name": {
+    "ar": "إدارة النظام والمراقبة",
+    "en": "System Administration & Monitoring",
+    "fr": "Administration et supervision"
+   },
+   "desc": {
+    "ar": "عرض الجداول، تحليل الصلاحيات، المهام الخلفية والسجلات.",
+    "en": "Table display, authorization analysis, background jobs and logs.",
+    "fr": "Affichage des tables, autorisations, travaux d'arrière-plan et journaux."
+   }
+  }
+ ],
+ "areas": [
+  {
+   "id": "inventory",
+   "icon": "boxes",
+   "name": {
+    "ar": "المخزون",
+    "en": "Inventory",
+    "fr": "Stocks"
+   }
+  },
+  {
+   "id": "procurement",
+   "icon": "shopping-cart",
+   "name": {
+    "ar": "المشتريات",
+    "en": "Procurement",
+    "fr": "Achats"
+   }
+  },
+  {
+   "id": "production",
+   "icon": "factory",
+   "name": {
+    "ar": "الإنتاج",
+    "en": "Production",
+    "fr": "Production"
+   }
+  },
+  {
+   "id": "shipping",
+   "icon": "truck",
+   "name": {
+    "ar": "الشحن",
+    "en": "Shipping",
+    "fr": "Expédition"
+   }
+  },
+  {
+   "id": "warehouse",
+   "icon": "warehouse",
+   "name": {
+    "ar": "المستودع",
+    "en": "Warehouse",
+    "fr": "Entrepôt"
+   }
+  },
+  {
+   "id": "quality",
+   "icon": "microscope",
+   "name": {
+    "ar": "الجودة",
+    "en": "Quality",
+    "fr": "Qualité"
+   }
+  },
+  {
+   "id": "planning",
+   "icon": "calendar",
+   "name": {
+    "ar": "التخطيط",
+    "en": "Planning",
+    "fr": "Planification"
+   }
+  },
+  {
+   "id": "sales",
+   "icon": "send",
+   "name": {
+    "ar": "المبيعات",
+    "en": "Sales",
+    "fr": "Ventes"
+   }
+  },
+  {
+   "id": "administration",
+   "icon": "settings",
+   "name": {
+    "ar": "الإدارة",
+    "en": "Administration",
+    "fr": "Administration"
+   }
+  },
+  {
+   "id": "custom",
+   "icon": "sparkles",
+   "name": {
+    "ar": "خاص بالشركة",
+    "en": "Company-specific",
+    "fr": "Spécifique entreprise"
+   }
+  }
+ ],
+ "systems": [
+  {
+   "id": "z",
+   "label": "Z",
+   "tone": "custom",
+   "desc": {
+    "ar": "معاملة مخصصة خاصة بنظام شركتك، ليست من SAP القياسي.",
+    "en": "Custom transaction specific to your company's system, not standard SAP.",
+    "fr": "Transaction spécifique à votre système, hors SAP standard."
+   }
+  },
+  {
+   "id": "ecc",
+   "label": "ECC",
+   "tone": "neutral",
+   "desc": {
+    "ar": "متاحة في SAP ECC 6.0.",
+    "en": "Available in SAP ECC 6.0.",
+    "fr": "Disponible dans SAP ECC 6.0."
+   }
+  },
+  {
+   "id": "s4",
+   "label": "S/4HANA",
+   "tone": "positive",
+   "desc": {
+    "ar": "متاحة في SAP S/4HANA (داخلي أو سحابة خاصة). قد يختلف التوفر في السحابة العامة.",
+    "en": "Available in SAP S/4HANA (on-premise or private cloud). Availability may differ in public cloud.",
+    "fr": "Disponible dans SAP S/4HANA (on-premise ou cloud privé). La disponibilité peut différer en cloud public."
+   }
+  },
+  {
+   "id": "compat",
+   "label": "LE-WM",
+   "tone": "critical",
+   "desc": {
+    "ar": "WM التقليدي: في S/4HANA ضمن نطاق التوافق، وانتهت حقوق الاستخدام العامة نهاية 2025 (راجع SAP Note 2269324 وشروط عقدك).",
+    "en": "Classic WM: in S/4HANA part of the compatibility scope; general usage rights ended at the end of 2025 (see SAP Note 2269324 and your contract).",
+    "fr": "WM classique : dans S/4HANA, périmètre de compatibilité ; droits d'usage généraux échus fin 2025 (voir la note SAP 2269324 et votre contrat)."
+   }
+  },
+  {
+   "id": "srm",
+   "label": "Stock Room",
+   "tone": "informative",
+   "desc": {
+    "ar": "مدعومة ضمن Stock Room Management (من S/4HANA 1909): نطاق مختصر من LE-WM دون TRM وYard Management وCross-Docking وVAS وإدارة الموجات وWM اللامركزي.",
+    "en": "Supported in Stock Room Management (from S/4HANA 1909): a reduced LE-WM scope without TRM, yard management, cross-docking, VAS, wave management or decentralized WM.",
+    "fr": "Prise en charge par Stock Room Management (dès S/4HANA 1909) : périmètre LE-WM réduit, sans TRM, gestion de cour, cross-docking, VAS, gestion des vagues ni WM décentralisé."
+   }
+  },
+  {
+   "id": "ewm",
+   "label": "EWM",
+   "tone": "informative",
+   "desc": {
+    "ar": "EWM مدمج في S/4HANA أو EWM لا مركزي. يتطلب مستودعًا مُدارًا بـ EWM.",
+    "en": "EWM embedded in S/4HANA or decentralized EWM. Requires an EWM-managed warehouse.",
+    "fr": "EWM intégré à S/4HANA ou EWM décentralisé. Nécessite un entrepôt géré par EWM."
+   }
+  },
+  {
+   "id": "tra",
+   "label": "LE-TRA",
+   "tone": "critical",
+   "desc": {
+    "ar": "معالجة الشحنات التقليدية: نطاق توافق في S/4HANA بحقوق استخدام ممددة حتى نهاية 2030؛ البديل الاستراتيجي هو Transportation Management.",
+    "en": "Classic shipment processing: S/4HANA compatibility scope with usage rights extended to the end of 2030; the strategic alternative is Transportation Management.",
+    "fr": "Traitement classique des transports : périmètre de compatibilité S/4HANA, droits prolongés jusqu'à fin 2030 ; l'alternative stratégique est Transportation Management."
+   }
+  }
+ ],
+ "levels": [
+  {
+   "id": 1,
+   "name": {
+    "ar": "مبتدئ",
+    "en": "Beginner",
+    "fr": "Débutant"
+   }
+  },
+  {
+   "id": 2,
+   "name": {
+    "ar": "متوسط",
+    "en": "Intermediate",
+    "fr": "Intermédiaire"
+   }
+  },
+  {
+   "id": 3,
+   "name": {
+    "ar": "متقدم",
+    "en": "Advanced",
+    "fr": "Avancé"
+   }
+  }
+ ],
+ "accounts": {
+  "inv_rm": {
+   "ar": "مخزون المواد الخام",
+   "en": "Raw-material inventory",
+   "fr": "Stock de matières premières"
+  },
+  "inv_fg": {
+   "ar": "مخزون المنتجات التامة",
+   "en": "Finished-goods inventory",
+   "fr": "Stock de produits finis"
+  },
+  "inv_recv": {
+   "ar": "مخزون المصنع المستلم",
+   "en": "Inventory – receiving plant",
+   "fr": "Stock – division réceptrice"
+  },
+  "inv_issue": {
+   "ar": "مخزون المصنع المورّد",
+   "en": "Inventory – supplying plant",
+   "fr": "Stock – division émettrice"
+  },
+  "inv_transit": {
+   "ar": "مخزون في الطريق (المصنع المستلم)",
+   "en": "Stock in transit (receiving plant)",
+   "fr": "Stock en acheminement (division réceptrice)"
+  },
+  "inv_target": {
+   "ar": "مخزون المادة المستلمة",
+   "en": "Inventory – receiving material",
+   "fr": "Stock – article récepteur"
+  },
+  "inv_source": {
+   "ar": "مخزون المادة المصدِّرة",
+   "en": "Inventory – issuing material",
+   "fr": "Stock – article émetteur"
+  },
+  "grir": {
+   "ar": "حساب تسوية الاستلام/الفاتورة (GR/IR)",
+   "en": "GR/IR clearing",
+   "fr": "Compte de régularisation EM/EF"
+  },
+  "cons_cc": {
+   "ar": "مصروف استهلاك – مركز تكلفة",
+   "en": "Consumption expense – cost center",
+   "fr": "Charge de consommation – centre de coûts"
+  },
+  "cons_order": {
+   "ar": "استهلاك مواد – أمر الإنتاج",
+   "en": "Material consumption – production order",
+   "fr": "Consommation matières – ordre de fabrication"
+  },
+  "factory_output": {
+   "ar": "مخرجات الإنتاج",
+   "en": "Factory output – production",
+   "fr": "Production stockée"
+  },
+  "cogs": {
+   "ar": "تكلفة البضاعة المباعة",
+   "en": "Cost of goods sold",
+   "fr": "Coût des marchandises vendues"
+  },
+  "scrap": {
+   "ar": "مصروف الإتلاف",
+   "en": "Scrapping expense",
+   "fr": "Charge de mise au rebut"
+  },
+  "zob": {
+   "ar": "حساب مقابل – استلام دون أمر شراء",
+   "en": "Offsetting entry – GR without PO",
+   "fr": "Contrepartie – entrée sans commande"
+  },
+  "invdiff_gain": {
+   "ar": "إيراد فروقات الجرد",
+   "en": "Inventory differences – gain",
+   "fr": "Écarts d'inventaire – gain"
+  },
+  "invdiff_loss": {
+   "ar": "مصروف فروقات الجرد",
+   "en": "Inventory differences – loss",
+   "fr": "Écarts d'inventaire – perte"
+  },
+  "kon": {
+   "ar": "التزامات مخزون الأمانة",
+   "en": "Consignment liabilities",
+   "fr": "Dettes de consignation"
+  }
+ },
+ "flowNodes": {
+  "supplier": {
+   "icon": "truck",
+   "name": {
+    "ar": "المورّد",
+    "en": "Supplier",
+    "fr": "Fournisseur"
+   }
+  },
+  "customer": {
+   "icon": "send",
+   "name": {
+    "ar": "العميل",
+    "en": "Customer",
+    "fr": "Client"
+   }
+  },
+  "consumption": {
+   "icon": "target",
+   "name": {
+    "ar": "مركز التكلفة",
+    "en": "Cost center",
+    "fr": "Centre de coûts"
+   }
+  },
+  "production": {
+   "icon": "factory",
+   "name": {
+    "ar": "الإنتاج",
+    "en": "Production",
+    "fr": "Production"
+   }
+  },
+  "scrap": {
+   "icon": "trash-2",
+   "name": {
+    "ar": "الإتلاف",
+    "en": "Scrap",
+    "fr": "Rebut"
+   }
+  },
+  "grblocked": {
+   "icon": "lock",
+   "name": {
+    "ar": "مخزون الاستلام المحظور",
+    "en": "GR blocked stock",
+    "fr": "Stock bloqué à la réception"
+   }
+  },
+  "otherPlant": {
+   "icon": "factory",
+   "name": {
+    "ar": "مصنع آخر",
+    "en": "Other plant",
+    "fr": "Autre division"
+   }
+  },
+  "otherSloc": {
+   "icon": "warehouse",
+   "name": {
+    "ar": "موقع تخزين آخر",
+    "en": "Other storage location",
+    "fr": "Autre magasin"
+   }
+  },
+  "otherMaterial": {
+   "icon": "repeat",
+   "name": {
+    "ar": "مادة أخرى",
+    "en": "Other material",
+    "fr": "Autre article"
+   }
+  },
+  "otherCompany": {
+   "icon": "network",
+   "name": {
+    "ar": "شركة أخرى في المجموعة",
+    "en": "Other group company",
+    "fr": "Autre société du groupe"
+   }
+  },
+  "special": {
+   "icon": "shield",
+   "name": {
+    "ar": "مخزون خاص (أمانة...)",
+    "en": "Special stock (consignment...)",
+    "fr": "Stock spécial (consignation...)"
+   }
+  },
+  "returns": {
+   "icon": "rotate-ccw",
+   "name": {
+    "ar": "مخزون المرتجعات",
+    "en": "Returns stock",
+    "fr": "Stock de retours"
+   }
+  },
+  "external": {
+   "icon": "plus",
+   "name": {
+    "ar": "خارج النظام",
+    "en": "Outside the system",
+    "fr": "Hors système"
+   }
+  },
+  "count": {
+   "icon": "clipboard-check",
+   "name": {
+    "ar": "نتيجة الجرد",
+    "en": "Inventory count",
+    "fr": "Comptage d'inventaire"
+   }
+  }
+ },
+ "org": {
+  "companyCode": "1000 LogiCorp Maroc SA",
+  "plants": [
+   "MA01 Casablanca",
+   "MA02 Tanger"
+  ],
+  "storageLocations": [
+   "RM01 Raw materials",
+   "PR01 Production",
+   "FG01 Finished goods"
+  ],
+  "warehouses": [
+   "100 (classic WM)",
+   "MA10 (EWM)"
+  ],
+  "materials": [
+   "RM-1001 Steel sheet 2 mm (ROH, V 12.50 MAD)",
+   "FG-2001 Cabinet assembly (FERT, S 40.00 MAD)"
+  ]
+ }
+}
