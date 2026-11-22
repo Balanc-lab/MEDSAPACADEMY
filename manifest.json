@@ -1,0 +1,33 @@
+{
+  "name": "LogiAcademy – SAP S/4HANA Logistics Learning",
+  "short_name": "LogiAcademy",
+  "description": "Learn SAP S/4HANA logistics (MM, WM, LE, EWM) in Arabic, English and French: transactions, movement types, stock lifecycle, annotated screens, quizzes and offline access.",
+  "id": "./",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#F3F5F8",
+  "theme_color": "#0B4F9C",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["education", "business", "productivity"],
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "المعاملات – Transactions", "short_name": "T-codes", "url": "./index.html#/tx", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "دورة حياة المخزون – Stock lifecycle", "short_name": "Lifecycle", "url": "./index.html#/lifecycle", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "مسارات التعلّم – Learning paths", "short_name": "Learn", "url": "./index.html#/learn", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "screenshots": [
+    { "src": "assets/screenshots/mobile-home.png", "sizes": "390x844", "type": "image/png", "form_factor": "narrow", "label": "Dashboard" },
+    { "src": "assets/screenshots/mobile-steps.png", "sizes": "390x844", "type": "image/png", "form_factor": "narrow", "label": "Annotated steps" },
+    { "src": "assets/screenshots/desktop-steps.png", "sizes": "1440x900", "type": "image/png", "form_factor": "wide", "label": "Transaction learning page" }
+  ]
+}
